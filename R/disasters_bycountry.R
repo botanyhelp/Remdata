@@ -6,5 +6,5 @@
 #' disasters_bycountry()
 
 disasters_bycountry <- function(exactcountry="Bangladesh") {
-    Remdata[Remdata$Country==exactcountry,]
+    Remdat[Remdat$Country==exactcountry,]
 }
