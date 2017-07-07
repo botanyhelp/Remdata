@@ -1,0 +1,9 @@
+Package: Remdata
+Title: Disasters wordwide from 1900-2008 data frame
+Version: 0.0.0.9000
+Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
+Description: Data frame of a comprehensive listing of of over 17,000 disasters, natural and otherwise, from around the globe.
+Depends: R (>= 2.15)
+License: The EM-DAT database has been made available for unrestricted access free of charge by UCL so that anyone with a query can obtain information.
+Encoding: UTF-8
+LazyData: true
