@@ -1,4 +1,49 @@
-# Disasters wordwide from 1900-2008 data frame
+# R data frame containing Disasters wordwide from 1900-2008 
+
+## Description 
+
+**R Data frame of a comprehensive listing of of over 17,000 disasters, natural and otherwise, from around the globe.**
+
+<http://www.emdat.be/> stores dates as 00002008 for a disaster that occurred in the entire year of 2008..and so such dates were changed to 20080101 YMD
+
+At least one function exists, **disasters_bycountry()**  Here we can see some basic interaction. 
+
+`sum(Remdat$Killed,na.rm=T)`
+
+`sum(as.numeric(Remdat$Cost),na.rm=T)`
+
+`levels(as.factor(Remdat$Country))`
+
+`names(Remdat)`
+
+`library(lubridate)`
+
+`ymd(Remdat[1,]$Start)`
+
+`sum(disasters_bycountry("China P Rep")$Killed,na.rm=T)`
+
+This data is also loaded into an Android application found here:
+
+<https://play.google.com/store/apps/details?id=com.jimsuplee.disastersworldwide>
+
+This data, and this exact R package, are used in simple Shiny application running here:
+
+<http://li1077-179.members.linode.com:8787/>
+
+The code for that shiny application is in the botanyhelp/ShinyRemdat package and can be installed in R like this:
+
+
+`library(devtools)`
+
+`install_github("botanyhelp/Remdata")`
+
+`library(Remdata)`
+
+`summary(Remdat)`
+
+`head(Remdat)`
+
+## About the Data
 
 Disasters wordwide from 1900-2008
 A comprehensive listing of of over 17,000 disasters, natural and otherwise, from around the globe.
