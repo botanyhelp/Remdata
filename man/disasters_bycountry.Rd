@@ -7,9 +7,11 @@
 disasters_bycountry(exactcountry = "Bangladesh")
 }
 \arguments{
-\item{exactcountry}{Defaults to "Bangladesh"
-disasters_bycountry()}
+\item{exactcountry}{Defaults to "Bangladesh"}
 }
 \description{
-disasters_bycountry function
+This function allows you to find disasters by Country
+}
+\examples{
+disasters_bycountry()
 }
