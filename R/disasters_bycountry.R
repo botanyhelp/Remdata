@@ -1,4 +1,5 @@
 #' disasters_bycountry function
+#' @export
 #'
 #' This function allows you to find disasters by Country
 #'

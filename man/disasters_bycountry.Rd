@@ -11,5 +11,5 @@ disasters_bycountry(exactcountry = "Bangladesh")
 disasters_bycountry()}
 }
 \description{
-This function allows you to find disasters by Country
+disasters_bycountry function
 }
