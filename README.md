@@ -32,16 +32,13 @@ This data, and this exact R package, are used in simple Shiny application runnin
 
 The code for that shiny application is in the botanyhelp/ShinyRemdat package and can be installed in R like this:
 
-
 `library(devtools)`
 
 `install_github("botanyhelp/Remdata")`
 
-`library(Remdata)`
+The ShinyRemdat repository contains one code file, app.R, found in this repository:
 
-`summary(Remdat)`
-
-`head(Remdat)`
+<https://github.com/botanyhelp/ShinyRemdat>
 
 ## About the Data
 
