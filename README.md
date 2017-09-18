@@ -40,6 +40,10 @@ The ShinyRemdat repository contains one code file, app.R, found in this reposito
 
 <https://github.com/botanyhelp/ShinyRemdat>
 
+## Getting the Data
+
+As you will see in a minute, the licensing is very free and open even it proprietary in wording given by the CRED.  This data is not easy to get anymore as there is not a simple zip file download.  I cannot recall if it was obtained with a persistent web crawler or if it was more easily available then.  Maybe there is a web crawler script in here, TODO: need to look for it and solve this mystery. 
+
 ## About the Data
 
 Disasters wordwide from 1900-2008
