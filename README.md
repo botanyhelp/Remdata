@@ -40,6 +40,20 @@ The ShinyRemdat repository contains one code file, app.R, found in this reposito
 
 <https://github.com/botanyhelp/ShinyRemdat>
 
+## Starting th Shiny server on linux
+
+To start this shiny-based Remdata server: 
+
+* listening on port 8789 
+* on a machine named www.example.com
+* assuming the directory named "Remdata" is in your home directory
+
+nohup R -e "shiny::runApp('~/Remdata',port=8789,host=getOption('www.example.com'))" &
+
+The **nohup** program at the front and the ampersand at the end are there to keep the server running even after you logout.  You should start by running the server without "nohup" and "&" until you see smooth and expected operation.  
+
+If the linux machine is not currently running a web server, then you can change port 8789 to 80.  Shiny servers require listening on their own port and so they cannot share it with Apache.  If you do start the server on port 80 or any port < 1024, then you will need to run the above command as user *root* or by prefixing the command with *sudo*.
+
 ## Getting the Data
 
 As you will see in a minute, the licensing is very free and open even it proprietary in wording given by the CRED.  This data is not easy to get anymore as there is not a simple zip file download.  I cannot recall if it was obtained with a persistent web crawler or if it was more easily available then.  Maybe there is a web crawler script in here, TODO: need to look for it and solve this mystery. 
