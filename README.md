@@ -54,6 +54,11 @@ The **nohup** program at the front and the ampersand at the end are there to kee
 
 If the linux machine is not currently running a web server, then you can change port 8789 to 80.  Shiny servers require listening on their own port and so they cannot share it with Apache.  If you do start the server on port 80 or any port < 1024, then you will need to run the above command as user *root* or by prefixing the command with *sudo*.
 
+You need root access to install *nohup* which usually is NOT installed by default:
+
+* UBUNTU apt-get install nohup
+* CENTOS yum install nohup
+
 ## Getting the Data
 
 As you will see in a minute, the licensing is very free and open even it proprietary in wording given by the CRED.  This data is not easy to get anymore as there is not a simple zip file download.  I cannot recall if it was obtained with a persistent web crawler or if it was more easily available then.  Maybe there is a web crawler script in here, TODO: need to look for it and solve this mystery. 
